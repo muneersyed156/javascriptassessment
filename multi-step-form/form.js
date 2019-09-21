@@ -67,6 +67,10 @@ s1n.addEventListener("click", function () {
         c += 1
         eme.style.display = "none"
     }
+    else if (mail == '') {
+        eme.style.display = "block"
+        eme.innerHTML = "Enter should not be empty"
+    }
     else {
         eme.style.display = "block"
         eme.innerHTML = "Enter Valid Email id"
@@ -93,6 +97,10 @@ s2n.addEventListener("click", function () {
         c += 1
         cte.style.display = "none"
     }
+    else if (contact == '') {
+        cte.style.display = "block"
+        cte.innerHTML = "contact with empty doesn't exist"
+    }
     else {
         cte.style.display = "block"
         cte.innerHTML = "A phone number has only 10 digits"
@@ -101,6 +109,10 @@ s2n.addEventListener("click", function () {
         c += 1
         cie.style.display = "none"
     }
+    else if (city == '') {
+        cie.style.display = "block"
+        cie.innerHTML = "Empty filed is not allowed"
+    }
     else {
         cie.style.display = "block"
         cie.innerHTML = "Only Alphabets are allowed"
@@ -108,6 +120,10 @@ s2n.addEventListener("click", function () {
     if (country.match(/[a-zA-Z]/gi) && country != '') {
         c += 1
         coe.style.display = "none"
+    }
+    else if (country == '') {
+        coe.style.display = "block"
+        coe.innerHTML = "A country field should not be empty"
     }
     else {
         coe.style.display = "block"
